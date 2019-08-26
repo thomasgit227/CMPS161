@@ -5,7 +5,7 @@
  * August 26, 2019
  * Simple println() Program to say "Heya" to the current System user.
  ******************************************************************************/
-package ChapterOne;
+package chapterOne;
 
 public class HeyaWorld {
 	public static void main(String[] args) {
