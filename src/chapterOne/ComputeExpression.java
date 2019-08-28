@@ -9,11 +9,13 @@ package chapterOne;
 
 public class ComputeExpression {
 	public static void main(String[] args) {
-		double numerator = multiply(add(10.5,2), 3);
-		double denominator = subtract(45, 3.5);
-		double result = divide(numerator, denominator);
+		double preNumerator = multiply(2, 3); //PEMDAS Order is important, this multiplies whats in the Numerator first
+		double numerator = add(preNumerator, 10.5); //This Finishes the Numerator Math
+		double denominator = subtract(45, 3.5); //Denominator Math
+		double result = divide(numerator, denominator); //Num / Den
 		
-		System.out.println(result);
+		System.out.println(""); //Problem
+		System.out.println("Your Result is... " + result); //Final Answer
 	}
 
 	private static double add(double a, double b) {

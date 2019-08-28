@@ -9,6 +9,6 @@ package chapterOne;
 
 public class HeyaWorld {
 	public static void main(String[] args) {
-		System.out.println("Heya " + System.getProperty("user.name"));
+		System.out.println("Heya " + System.getProperty("user.name") + "!");
 	}
 }
