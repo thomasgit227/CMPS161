@@ -12,6 +12,7 @@ package chapterTwo;
 
 public class Operators {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		
 		double a = 5.7;
@@ -32,10 +33,10 @@ public class Operators {
 		double assignMod = a %= 2;
 		
 	//Incremental Operations, can be used without declaring a new variable
-		//These will operate on a, and then set the variable equal to the changed "a"
+		//These will add 1 to a, and then set the variable equal to the changed "a"
 		double preIncrement = ++a;
 		double preDecrement = --a;
-		//These will set the variable equal to "a", and then operate on "a"
+		//These will set the variable equal to "a", and then add 1 to "a"
 		double postIncrement = a++;		
 		double postDecrement = a--;
 		
