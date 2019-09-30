@@ -25,9 +25,10 @@ public class RockPaperScissors {
 		System.out.println("Enter 0 for Stone, Enter 1 for Papyrus, Enter 2 for Sword");
 		userHand = user.nextInt()%3; //Limits Domain to [0,2]
 		
-		//Winner Determination
-		
+		//Winner Determination	
 		switch(userHand) {
+		
+		//If Machine draws Stone
 		case 0:
 			if(machineHand == 0) {
 				System.out.println("DRAW");
@@ -39,6 +40,8 @@ public class RockPaperScissors {
 				System.out.println("USER WINS");
 			}
 			break;
+			
+		//If Machine draws Papyrus
 		case 1:
 			if(machineHand == 0) {
 				System.out.println("USER WINS");
@@ -50,6 +53,8 @@ public class RockPaperScissors {
 				System.out.println("MACHINE WINS");
 			}
 			break;
+			
+		//If Machine draws Sword
 		case 2:
 			if(machineHand == 0) {
 				System.out.println("MACHINE WINS");
@@ -61,6 +66,8 @@ public class RockPaperScissors {
 				System.out.println("DRAW");
 			}
 			break;
+			
+		//Exit Status 1
 		default:
 			System.exit(1);
 		}
