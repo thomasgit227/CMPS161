@@ -5,7 +5,7 @@
  * August 26, 2019
  * This will compute some basic math
  ******************************************************************************/
-package chapterOne;
+package chapter1;
 
 public class ComputeExpression {
 	public static void main(String[] args) {

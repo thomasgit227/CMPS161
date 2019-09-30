@@ -1,4 +1,4 @@
-package chapterOne;
+package chapter1;
 
 /*
  * Thomas Floyd (W#0699719)
