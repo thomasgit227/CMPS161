@@ -41,24 +41,24 @@ public class RockPaperScissors {
 			break;
 		case 1:
 			if(machineHand == 0) {
-				System.out.println();
+				System.out.println("USER WINS");
 			}
 			else if(machineHand == 1) {
-				System.out.println("");
+				System.out.println("DRAW");
 			}
 			else {
-				System.out.println();
+				System.out.println("MACHINE WINS");
 			}
 			break;
 		case 2:
 			if(machineHand == 0) {
-				System.out.println();
+				System.out.println("MACHINE WINS");
 			}
 			else if(machineHand == 1) {
-				System.out.println();
+				System.out.println("USER WINS");
 			}
 			else {
-				System.out.println();
+				System.out.println("DRAW");
 			}
 			break;
 		default:
