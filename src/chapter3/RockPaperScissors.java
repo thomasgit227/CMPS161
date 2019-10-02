@@ -24,7 +24,7 @@ public class RockPaperScissors {
 		System.out.println("Stone..., \nPapyrus..., \nSword,......, \nMUSKET!");
 		System.out.println("Enter 0 for Stone, Enter 1 for Papyrus, Enter 2 for Sword");
 		userHand = user.nextInt()%3; //Limits Domain to [0,2]
-		
+		user.close();
 		//Winner Determination	
 		switch(userHand) {
 		
