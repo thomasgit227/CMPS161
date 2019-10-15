@@ -38,7 +38,7 @@ public class FloydTProg3 {
 		}
 		user.close();
 		
-		//Choices Revealed TODO: this will be put in the switch soon
+		//Choices Revealed 
 		System.out.println("User : " +  userHand);
 		System.out.println("Machine : " + machineHand);
 		
