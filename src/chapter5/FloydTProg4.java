@@ -198,8 +198,8 @@ public class FloydTProg4 {
 		System.out.printf("*	Gross Pay: $ %.2f\n", grossPay);
 		
 		System.out.println("* 	--------------|TAX|-------------");
-		System.out.printf("*	Federal Withholding: (%d%%) $%.2f\n", (int)federalTax, federalTax * grossPay);
-		System.out.printf("*	State Withholding: (%d%%) $%.2f\n", (int)stateTax, stateTax * grossPay);
+		System.out.printf("*	Federal Withholding: (%d%%) $%.2f\n", (int)federalTax, (federalTax * .01) * grossPay);
+		System.out.printf("*	State Withholding: (%d%%) $%.2f\n", (int)stateTax, (stateTax * .01) * grossPay);
 		System.out.printf("*	Total Deduction: (%d%%) $ %.2f\n", (int)(deductionPercent * 100), deductionTotal);
 
 		System.out.println("* 	------------|PAYMENT|-----------");
