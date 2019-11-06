@@ -1,4 +1,4 @@
-# Thomas Floyd (W# 0699719)
+# Thomas Floyd
 # CMPS 161_05
 # Dr. Bonnie Achee
 
