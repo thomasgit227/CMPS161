@@ -32,7 +32,9 @@ public class FloydTProg5 {
 		//Repeated Code
 		do {
 			char userChoice = getChoice();
-			runOption(userChoice);
+			if(userChoice != 0) {
+				runOption(userChoice);
+			}
 		}
 		while(!isExiting);
 		
@@ -77,7 +79,6 @@ public class FloydTProg5 {
 		}
 		else {
 			System.out.println("PLEASE ENTER A PROPER CHOICE!");
-			getChoice();
 		}
 		
 		return option;
@@ -106,7 +107,7 @@ public class FloydTProg5 {
 		
 		case 's': System.out.println("Goodbye");
 		default:
-			System.exit(1);
+			isExiting = true;
 		}
 	}
 	
