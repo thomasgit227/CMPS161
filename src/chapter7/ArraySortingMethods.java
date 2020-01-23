@@ -3,7 +3,7 @@ package chapter7;
 public class ArraySortingMethods {
 	
 	//Change these (Touchy Allowed)
-	private final static int INDICES = 100;
+	private final static int INDICES = 2;
 	
 	//Variables for Class Use (No Touchy)
 	private static int[] arr = new int[INDICES];

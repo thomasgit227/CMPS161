@@ -30,13 +30,12 @@ public class FloydTProg6 {
 		//Initial Data
 		welcomeMessage();
 		promptEnterData();
+		printMenuOptions();
 		
 		//Main Loop
 		while(!currentChoice.equals("Exit")) {
-			printMenuOptions();
-			keys.nextLine();
-			currentChoice = keys.nextLine();
-			runOption();
+				currentChoice = keys.nextLine();
+				runOption();
 		}
 		
 		//End
@@ -79,29 +78,39 @@ public class FloydTProg6 {
 		if(currentChoice.equals("Ascending Order")) {
 			sortAscending();
 			printStudents(names);
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Descending Order")) {
 			sortDescending();
 			printStudents(names);
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Change Score")) {
 			scoreChange();
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Find Score")) {
 			findScore();
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Class Average")) {
 			System.out.println("Class Average is " + classAverage());
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Above Average Scores")) {
 			aboveAverage();
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Below Average Scores")) {
 			belowAverage();
+			printMenuOptions();
 		}
 		else if(currentChoice.equals("Exit")) {
 			System.out.println("Have a Great Day");
 			System.exit(1);
+		}
+		else if(currentChoice.equals("")) {
+			System.out.println();
 		}
 		else {
 			System.out.println("Invalid Input, please try again...");
@@ -228,9 +237,6 @@ public class FloydTProg6 {
 		if(printedArray.length != 0) {
 			System.out.print(printedArray[0]);
 			for(int i = 1; i < printedArray.length; i ++) {
-				if(printedArray.length == 2) {
-					break;
-				}
 				System.out.print(", " + printedArray[i]);
 			}
 		}
